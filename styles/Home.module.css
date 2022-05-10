@@ -108,6 +108,10 @@
   margin-left: 0.5rem;
 }
 
+
+.TableBox .TableBox--header_id {
+  background-color: red!important;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
