@@ -1,35 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Repofinder 
 
-## Getting Started
+This is an React App build in order to let user to search github repositories using `keyword` like `repo/owner:name` pattern or just the repo `name`
 
-First, run the development server:
+
+## Implementation
+
+- Read Github Documents and updated how to use it
+- Create a custom query that allow to search into github
+- Create service to fetch data from github passing a query that allow to search
+- Create a component as Search Input
+- Create a component as Grid results
+- Create a component as Paginator
+- Create a smart component as Home to handle all
+- Drag and drop markdown and HTML files into Dillinger
+- Export documents as Markdown, HTML and PDF
+
+## TODO
+
+- Add test cases per component
+- Add end to end test for flow
+
+## How to install
+
+You need to have installed `yarn, nodejs, npm packages` in your OS
+
+Open a terminal and write this code 
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+## How to start the wepapp
+
+Open a terminal and write this code 
+
+```bash
+yarn start
+```
+
+## How to start for development
+
+Open a terminal and write this code 
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to build for production
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Open a terminal and write this code 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+yarn build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# repofinder
