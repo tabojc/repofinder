@@ -1,7 +1,8 @@
 import styles from './TableBox.module.css'
 
 export function TableBox({
-    items
+    items,
+    className
 }) {
     const fieldList = items.length > 0 ? Object.keys(items[0]) : [];
 
@@ -18,10 +19,18 @@ export function TableBox({
         return (<tbody>{rows}</tbody>)
     }
 
+    const classes = `${styles.TableBox} ${className}`
+
     return (
         <> 
-            <table className={styles.TableBox}>
-                <tr>{fieldList.map(header => (<th className={`TableBox--header_${header}`} key={header}>{header}</th>))}</tr>
+            <table className={className}>
+                <thead>
+                    <tr>
+                        {fieldList.map(header => (
+                            <th className={`TableBox--header_${header}`} key={header}>{header}</th>
+                        ))}
+                    </tr>
+                </thead>
                 {TableRow(items)}
             </table>
         </>

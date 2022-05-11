@@ -108,6 +108,44 @@
   margin-left: 0.5rem;
 }
 
+.TableBoxContainer {
+  background-color: gray;
+  border-collapse: collapse;
+}
+
+.TableBoxContainer th {
+  background-color:#1ABC9C;
+}
+
+.TableBoxContainer tr {
+  background-color: #F8F9F9;
+}
+
+.TableBoxContainer td {
+  border: 1px solid #AEB6BF;
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+
+/*tr td.TableBox--column_avatar_url*/
+.TableBoxContainer img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 50%;*/
+}
+
+
+.TableBox--column_name {
+  background-color: green;
+}
+
+.TableBox--row_0 {
+  background-color: blue;
+}
 
 .TableBox .TableBox--header_id {
   background-color: red!important;

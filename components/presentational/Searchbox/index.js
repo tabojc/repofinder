@@ -1,4 +1,4 @@
-export default function Searchbox ({ title = 'Search', value = '', onSubmit, onChange }) {
+export default function Searchbox ({ title = '', value = '', onSubmit, onChange }) {
   return (
     <form onSubmit={onSubmit}>
         <span>{title}</span>

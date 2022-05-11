@@ -1,12 +1,10 @@
 import { REPOSITORY_URL } from '../../utils/constants.js';
 
-export function fetchAllRepositories({ keyword }) {
-  //const base_url = 'http://localhost:3000/api'
-  //const path = `repositories`
-  const searchParams = new URLSearchParams({ name: keyword });
+export function fetchAllRepositories({ keyword, perPage, page }) {
+  const searchParams = new URLSearchParams({ name: keyword, per_page: perPage, page });
 
   const queryString = searchParams.toString();
-  //const url = `${base_url}/${path}?${queryString}`
+
   const url = `${REPOSITORY_URL}?${queryString}`
 
   return fetch(`${url}`).then(response => response.json())
